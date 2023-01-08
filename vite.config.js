@@ -11,6 +11,11 @@ export default defineConfig({
       resolvers: [AntDesignVueResolver()]
     })
   ],
+  resolve:{
+    alias: {
+      'vue': 'vue/dist/vue.esm-bundler.js'
+    }
+  },
   server: {
     host:'0.0.0.0',
     port: 3000,
